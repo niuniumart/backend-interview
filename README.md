@@ -29,6 +29,7 @@
 
 ### 趣味算法
 
+![青蛙哭泣](https://user-images.githubusercontent.com/83523072/137884370-276e7b3f-543f-4a86-b5c1-9ed19bbc4aff.gif)
 
 
 
