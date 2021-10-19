@@ -32,6 +32,10 @@
 
 
 
+## 欢迎交流
+牛牛希望和各位小伙伴一起进步，如果内容上有勘误，或疑问，或者就是单纯地想交流下，都可以找牛牛聊聊。
+
+![image](https://user-images.githubusercontent.com/83523072/137868133-d56737e3-86b3-4e38-bc2a-b2efaf359cea.png)
 
 
 
