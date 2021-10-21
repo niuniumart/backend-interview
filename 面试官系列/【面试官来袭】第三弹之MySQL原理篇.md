@@ -115,8 +115,6 @@
 🐶:<b><font color=blue>红黑树</font></b>放弃了追求完全平衡，只追求大致平衡，在与平衡二叉树的时间复杂度相差不大的情况下，保证每次插入最多只需要三次旋转就能达到平衡，实现起来也更为简单。
 
 🐶:但是红黑树多用于内部排序，即全放在内存中，而B+树多用于外存上时，B+也被称为一个磁盘友好的数据结构。
-
-🐶:但是红黑树多用于内部排序，即全放在内存中，而B+树多用于外存上时，B+也被称为一个磁盘友好的数据结构。
 <center>
 
 ![](https://mmbiz.qpic.cn/mmbiz_jpg/HQKXnkPzzdtsXIia0Z0gVnojuz9KHdgYmicEz6ZAo03icO0TrVzLACUbGqKh2ibMibL7AcibRibgWRbucrBciaJZicRibiaMw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)</center>
