@@ -16,7 +16,8 @@
 </br>
 </br>
 ***
-<center><b><font size=2 color=#c2c2c2>ACID与隔离级别</font></b></center>
+<center>
+  <b><font size=2 color=#c2c2c2>ACID与隔离级别</font></b></center>
 </br>
 🐮:<b>那你先来说说MySQL的四种隔离级别吧。</b>
 
