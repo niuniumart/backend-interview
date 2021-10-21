@@ -120,6 +120,7 @@
 <center>
 
 ![](https://mmbiz.qpic.cn/mmbiz_jpg/HQKXnkPzzdtsXIia0Z0gVnojuz9KHdgYmicEz6ZAo03icO0TrVzLACUbGqKh2ibMibL7AcibRibgWRbucrBciaJZicRibiaMw/640?wx_fmt=jpeg&wxfrom=5&wx_lazy=1&wx_co=1)</center>
+
 <center><b><font size=2 color=#c2c2c2>红黑树</font></b></center>
 
 🐮:<b>那B+树相比B-树有什么优点呢？</b>
