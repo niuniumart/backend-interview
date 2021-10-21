@@ -20,7 +20,7 @@
 </br>
 </br>
 ***
-<center><b><font size=2 color=#c2c2c2>基本概念</font></b></center>
+<p align="center"><b><font size=2 color=#c2c2c2>基本概念</font></b></p>
 </br>
 🐮:<b>你能谈谈MySQL是什么吗？</b>
 
@@ -68,8 +68,7 @@
 </br>
 </br>
 ***
-
-<center><b><font size=2 color=#c2c2c2>数据结构与常见操作</font></b></center>
+<p align="center"><b><font size=2 color=#c2c2c2>数据结构与常见操作</font></b></p>
 </br>
 🐮:<b>能说说varchar与char的区别是什么吗？</b>
 
@@ -116,7 +115,7 @@ int(11)的11代表什么，这是个初学者很容易混淆的问题，其实�
 </br>
 </br>
 ***
-<center><b><font size=2 color=#c2c2c2>MySQL特性考察</font></b></center>
+<p align="center"><b><font size=2 color=#c2c2c2>MySQL特性考察</font></b></p>
 </br>
 🐮:<b>你知道MySQL有哪些存储引擎吗？</b>
 

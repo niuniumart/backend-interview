@@ -16,8 +16,7 @@
 </br>
 </br>
 ***
-<center>
-  <b><font size=2 color=#c2c2c2>ACID与隔离级别</font></b></center>
+<p align="center"><b><font size=2 color=#c2c2c2>ACID与隔离级别</font></b></p>
 </br>
 🐮:<b>那你先来说说MySQL的四种隔离级别吧。</b>
 
@@ -90,14 +89,16 @@
 </br>
 </br>
 ***
-<center><b><font size=2 color=#c2c2c2>索引原理</font></b></center>
+<p align="center"><b><font size=2 color=#c2c2c2>索引原理</font></b></p>
 </br>
 🐮:<b>索引的底层实现是什么？</b>
 
 🐶:用的B+树，它是一个N叉排序树，每个节点通常有多个子节点。节点种类有<b><font color=blue>普通节点</font></b>和<b><font color=blue>叶子节点</font></b>。根节点可能是一个叶子节点， 也可能是个普通节点。
 <center>
   
-![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdt317Z8HoaHpwNCJuoLFbDw2QUtH3hhEAXuCPJAEr4KKU8uEg0cNSqHfL4sXDZwR2I3KuAjibIhtyA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center><center><b><font size=2 color=#c2c2c2>B+树</font></b></center>
+![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdt317Z8HoaHpwNCJuoLFbDw2QUtH3hhEAXuCPJAEr4KKU8uEg0cNSqHfL4sXDZwR2I3KuAjibIhtyA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center>
+<p align="center"><b><font size=2 color=#c2c2c2>B+树</font></b></p>
+
 
 🐮:<b>那MySQL为什么用树做索引？</b>
 
@@ -110,7 +111,8 @@
 🐶:同时，B+树优势在于每个节点能存储多个信息，这样深度比平衡二叉树会浅很多，减少数据查找的次数。
 <center>
   
-![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdtsXIia0Z0gVnojuz9KHdgYmcb5AXMXygD4OApesausaFejUwRAeeFajGK5RjHTm2eDcGribA6B5zkw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center><center><b><font size=2 color=#c2c2c2>平衡二叉树</font></b></center>
+![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdtsXIia0Z0gVnojuz9KHdgYmcb5AXMXygD4OApesausaFejUwRAeeFajGK5RjHTm2eDcGribA6B5zkw/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center>
+<p align="center"><b><font size=2 color=#c2c2c2>平衡二叉树</font></b></p>
 
 🐶:<b><font color=blue>红黑树</font></b>放弃了追求完全平衡，只追求大致平衡，在与平衡二叉树的时间复杂度相差不大的情况下，保证每次插入最多只需要三次旋转就能达到平衡，实现起来也更为简单。
 
@@ -128,7 +130,9 @@
 🐶:MySQL进行区间访问时，由于B+树叶子节点之间用指针相连，只需要遍历所有的叶子节点即可，而B-树则需要中序遍历一遍。
 <center>
   
-![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdtwHzPQDsAu5TqjLC5nNgROUzRVXq3bicmB8nLM9l7ibXn7EsiabiaGicE0sr2jWBEUqU5duaQX8spEmmg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center><center><b><font size=2 color=#c2c2c2>B-树</font></b></center>
+![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdtwHzPQDsAu5TqjLC5nNgROUzRVXq3bicmB8nLM9l7ibXn7EsiabiaGicE0sr2jWBEUqU5duaQX8spEmmg/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center>
+<p align="center"><b><font size=2 color=#c2c2c2>B-树</font></b></p>
+
 
 这类选型问题其实很深，要深刻理解为什么要用B+树、B+树有哪些竞争对手。换句话说，也就是要了解，<b><font color=blue>哪些数据结构能做索引</font></b>。如果能答出<b><font color=blue>哈希表、树、跳表</font></b>这三大类，就说明确实有自己的深入思考，这部分知识点学透了，也是加分项。
 
@@ -146,14 +150,15 @@
 </br>
 </br>
 ***
-<center><b><font size=2 color=#c2c2c2>锁</font></b></center>
+<p align="center"><b><font size=2 color=#c2c2c2>锁</font></b></p>
 </br>
 🐮:<b>下面讲讲MySQL锁的分类吧。</b>
 
 🐶:MySQL<b><font color=blue>从锁粒度粒度上讲</font></b>，有表级锁、行级锁。<b><font color=blue>从强度上讲</font></b>，又分为意向共享锁、共享锁、意向排它锁和排它锁。
 <center>
   
-![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdtvWRiccel3bcXT3ic6cHAoQ5nl32AxVzTsdDjaiaQ0WxCTDdzwjQTZBj8dzWFicE8UQYrMAOIW9V0Q5g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center><center><b><font size=2 color=#c2c2c2>锁模式的兼容情况</font></b></center>
+![](https://mmbiz.qpic.cn/mmbiz_png/HQKXnkPzzdtvWRiccel3bcXT3ic6cHAoQ5nl32AxVzTsdDjaiaQ0WxCTDdzwjQTZBj8dzWFicE8UQYrMAOIW9V0Q5g/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1)</center>
+<p align="center"><b><font size=2 color=#c2c2c2>锁模式的兼容情况</font></b></p>
   
 🐮:<b>那select操作会加锁吗？</b>
 
